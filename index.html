@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LAYAAL Café & Lounge — A premium café and classic drinks destination in Cairo, Egypt. Where Every Night Has a Story." />
+  <meta name="keywords" content="LAYAAL, café, lounge, Cairo, premium coffee, specialty drinks, luxury café, nightlife" />
+  <meta property="og:title" content="LAYAAL Café & Lounge — Where Every Night Has a Story" />
+  <meta property="og:description" content="Premium café and lounge experience in Cairo, Egypt. Signature coffees, specialty drinks, and an unforgettable atmosphere." />
+  <meta property="og:type" content="website" />
+  <title>LAYAAL Café & Lounge | Where Every Night Has a Story</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ LOADING SCREEN ══════════════════ -->
+  <div id="loader" class="loader" role="status" aria-label="Loading LAYAAL">
+    <div class="loader-inner">
+      <div class="loader-logo">L A Y A A L</div>
+      <div class="loader-tagline">Where Every Night Has a Story</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════ NAVIGATION ══════════════════ -->
+  <header id="navbar" class="navbar" role="banner">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="LAYAAL Home">
+        <span class="logo-text">LAYAAL</span>
+        <span class="logo-sub">Café &amp; Lounge</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#why" class="nav-link">Why Us</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <span class="theme-icon dark-icon"><i class="fa-solid fa-moon"></i></span>
+          <span class="theme-icon light-icon"><i class="fa-solid fa-sun"></i></span>
+        </button>
+        <a href="#contact" class="nav-cta btn-gold">Reserve a Seat</a>
+        <button id="menu-toggle" class="hamburger" aria-label="Open mobile menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Nav -->
+    <div id="mobile-nav" class="mobile-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#menu" class="mobile-link">Menu</a></li>
+        <li><a href="#why" class="mobile-link">Why Us</a></li>
+        <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+        <li><a href="#testimonials" class="mobile-link">Reviews</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════ HERO SECTION ══════════════════ -->
+    <section id="hero" class="hero" aria-label="Hero — LAYAAL Brand Introduction">
+      <div class="hero-bg" style="background-image: url('hero_bg.png');" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <!-- Floating decorative orbs -->
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="orb orb-3" aria-hidden="true"></div>
+
+      <!-- Floating glass cards -->
+      <div class="hero-float float-left glass-card" aria-hidden="true">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Signature Coffee</span>
+      </div>
+      <div class="hero-float float-right glass-card" aria-hidden="true">
+        <i class="fa-solid fa-star"></i>
+        <span>4.9 ★ Rating</span>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow reveal-up">Premium Café &amp; Lounge · Cairo, Egypt</p>
+        <h1 class="hero-title reveal-up">
+          <span class="title-main">LAYAAL</span>
+          <span class="title-sub"><em>Where Every Night Has a Story.</em></span>
+        </h1>
+        <p class="hero-desc reveal-up">
+          A sanctuary where elegance meets warmth. Crafted beverages, luxurious atmosphere, and memories that last beyond midnight.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#menu" class="btn-gold btn-lg" id="btn-explore-menu">Explore Menu <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#about" class="btn-ghost btn-lg" id="btn-discover-story">Discover Our Story</a>
+        </div>
+        <div class="hero-badges reveal-up" aria-label="Key highlights">
+          <div class="hero-badge"><span class="badge-num">150+</span><span class="badge-label">Daily Guests</span></div>
+          <div class="hero-divider" aria-hidden="true"></div>
+          <div class="hero-badge"><span class="badge-num">98%</span><span class="badge-label">Satisfaction</span></div>
+          <div class="hero-divider" aria-hidden="true"></div>
+          <div class="hero-badge"><span class="badge-num">4 PM</span><span class="badge-label">Opens Daily</span></div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ══════════════════ ABOUT SECTION ══════════════════ -->
+    <section id="about" class="section about-section" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Our Identity</p>
+          <h2 id="about-heading" class="section-title">About <span class="text-gold">LAYAAL</span></h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Brand Story -->
+          <div class="about-story glass-card reveal-left">
+            <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+            <h3>Our Story</h3>
+            <p>
+              LAYAAL was created to offer a sanctuary from the fast pace of everyday life. Inspired by the beauty of late-night conversations, warm lighting, and unforgettable moments, the brand was designed as more than a café—it is a destination where people gather, connect, relax, and create memories.
+            </p>
+            <p>
+              Every detail, from the interior atmosphere to the carefully crafted beverages, reflects comfort, elegance, and authenticity. At LAYAAL, every night becomes an experience worth remembering.
+            </p>
+          </div>
+
+          <!-- Mission & Vision -->
+          <div class="about-mv">
+            <div class="glass-card mv-card reveal-up" style="animation-delay:.1s">
+              <div class="mv-icon" aria-hidden="true"><i class="fa-solid fa-bullseye"></i></div>
+              <h3>Our Mission</h3>
+              <p>To deliver exceptional beverages, outstanding hospitality, and memorable experiences that bring people together in an atmosphere of comfort and elegance.</p>
+            </div>
+            <div class="glass-card mv-card reveal-up" style="animation-delay:.2s">
+              <div class="mv-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
+              <h3>Our Vision</h3>
+              <p>To become one of the leading premium café and lounge brands in the Middle East, known for creating meaningful experiences through quality, hospitality, and innovation.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Values -->
+        <div class="values-grid">
+          <p class="values-label reveal-up">Core Values</p>
+          <div class="values-cards">
+            <div class="value-card glass-card reveal-up" style="animation-delay:.05s">
+              <i class="fa-solid fa-gem" aria-hidden="true"></i>
+              <span>Excellence</span>
+            </div>
+            <div class="value-card glass-card reveal-up" style="animation-delay:.1s">
+              <i class="fa-solid fa-fingerprint" aria-hidden="true"></i>
+              <span>Authenticity</span>
+            </div>
+            <div class="value-card glass-card reveal-up" style="animation-delay:.15s">
+              <i class="fa-solid fa-couch" aria-hidden="true"></i>
+              <span>Comfort</span>
+            </div>
+            <div class="value-card glass-card reveal-up" style="animation-delay:.2s">
+              <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+              <span>Hospitality</span>
+            </div>
+            <div class="value-card glass-card reveal-up" style="animation-delay:.25s">
+              <i class="fa-solid fa-check-double" aria-hidden="true"></i>
+              <span>Consistency</span>
+            </div>
+            <div class="value-card glass-card reveal-up" style="animation-delay:.3s">
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <span>Community</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ HIGHLIGHTS / SHOWCASE ══════════════════ -->
+    <section id="highlights" class="section highlights-section" aria-labelledby="highlights-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Featured</p>
+          <h2 id="highlights-heading" class="section-title">The <span class="text-gold">LAYAAL</span> Experience</h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="highlights-grid">
+          <article class="highlight-card glass-card reveal-up" style="animation-delay:.05s">
+            <div class="highlight-icon" aria-hidden="true"><i class="fa-solid fa-champagne-glasses"></i></div>
+            <div class="highlight-badge">Signature</div>
+            <h3>The LAYAAL Atmosphere</h3>
+            <p>A carefully designed atmosphere combining elegant interiors, warm lighting, and unforgettable hospitality — a world apart from the ordinary.</p>
+          </article>
+          <article class="highlight-card glass-card reveal-up" style="animation-delay:.1s">
+            <div class="highlight-icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></div>
+            <div class="highlight-badge badge-gold">Best Seller</div>
+            <h3>Golden Latte</h3>
+            <p>The most loved beverage at LAYAAL, known for its smooth caramel flavor and comforting finish. A cup that feels like a warm embrace.</p>
+          </article>
+          <article class="highlight-card glass-card reveal-up" style="animation-delay:.15s">
+            <div class="highlight-icon" aria-hidden="true"><i class="fa-solid fa-cookie-bite"></i></div>
+            <div class="highlight-badge">Customer Favorite</div>
+            <h3>Lotus Delight Waffle</h3>
+            <p>A perfect combination of texture, sweetness, and indulgence. Fresh waffle crowned with velvety Lotus cream and biscuit crumble.</p>
+          </article>
+          <article class="highlight-card glass-card reveal-up" style="animation-delay:.2s">
+            <div class="highlight-icon" aria-hidden="true"><i class="fa-solid fa-flask"></i></div>
+            <div class="highlight-badge badge-brown">Brand Specialty</div>
+            <h3>Arabian Night Blend</h3>
+            <p>A unique signature beverage infused with exotic spices and warm flavors, crafted exclusively for the LAYAAL experience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ MENU SECTION ══════════════════ -->
+    <section id="menu" class="section menu-section" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Crafted for You</p>
+          <h2 id="menu-heading" class="section-title">Our Signature <span class="text-gold">Menu</span></h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+          <p class="section-desc">Each item is thoughtfully crafted to deliver an unparalleled sensory experience.</p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button class="menu-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="coffee">Coffee</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="specialty">Specialty</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="cold">Cold</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="dessert">Desserts</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="bites">Light Bites</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- COFFEE -->
+          <article class="menu-card glass-card" data-category="coffee">
+            <div class="menu-card-icon" aria-hidden="true">☕</div>
+            <div class="menu-cat-label">Signature Coffee</div>
+            <h3 class="menu-card-title">Midnight Espresso</h3>
+            <p class="menu-card-desc">Rich espresso crafted for bold coffee lovers who seek depth in every sip.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="coffee">
+            <div class="menu-card-icon" aria-hidden="true">✨</div>
+            <div class="menu-cat-label menu-cat-gold">Best Seller</div>
+            <h3 class="menu-card-title">Golden Latte</h3>
+            <p class="menu-card-desc">Smooth espresso blended with creamy milk and subtle caramel notes. Our most celebrated creation.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="coffee">
+            <div class="menu-card-icon" aria-hidden="true">🌙</div>
+            <div class="menu-cat-label">Signature Coffee</div>
+            <h3 class="menu-card-title">Crescent Cappuccino</h3>
+            <p class="menu-card-desc">A perfectly balanced cappuccino inspired by the calm beauty of moonlit nights.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="coffee">
+            <div class="menu-card-icon" aria-hidden="true">🍫</div>
+            <div class="menu-cat-label">Signature Coffee</div>
+            <h3 class="menu-card-title">Velvet Mocha</h3>
+            <p class="menu-card-desc">Premium chocolate and espresso combined into a luxurious, velvety experience.</p>
+          </article>
+
+          <!-- SPECIALTY -->
+          <article class="menu-card glass-card" data-category="specialty">
+            <div class="menu-card-icon" aria-hidden="true">🌟</div>
+            <div class="menu-cat-label menu-cat-brown">Brand Specialty</div>
+            <h3 class="menu-card-title">Arabian Night Blend</h3>
+            <p class="menu-card-desc">A signature beverage infused with exotic spices and warm, enchanting flavors.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="specialty">
+            <div class="menu-card-icon" aria-hidden="true">♥</div>
+            <div class="menu-cat-label">Specialty Drinks</div>
+            <h3 class="menu-card-title">LAYAAL Hot Chocolate</h3>
+            <p class="menu-card-desc">Velvety chocolate crafted for ultimate comfort on cool evenings.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="specialty">
+            <div class="menu-card-icon" aria-hidden="true">🌿</div>
+            <div class="menu-cat-label">Specialty Drinks</div>
+            <h3 class="menu-card-title">Cinnamon Dream</h3>
+            <p class="menu-card-desc">A creamy cinnamon-infused drink with rich aromatic notes that linger beautifully.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="specialty">
+            <div class="menu-card-icon" aria-hidden="true">🌕</div>
+            <div class="menu-cat-label">Specialty Drinks</div>
+            <h3 class="menu-card-title">Vanilla Moon Latte</h3>
+            <p class="menu-card-desc">A smooth latte finished with delicate vanilla sweetness — pure, celestial comfort.</p>
+          </article>
+
+          <!-- COLD -->
+          <article class="menu-card glass-card" data-category="cold">
+            <div class="menu-card-icon" aria-hidden="true">🧊</div>
+            <div class="menu-cat-label">Cold Beverages</div>
+            <h3 class="menu-card-title">Iced Golden Latte</h3>
+            <p class="menu-card-desc">Refreshing and smooth with a luxurious touch of caramel — our golden classic, served cold.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="cold">
+            <div class="menu-card-icon" aria-hidden="true">🌑</div>
+            <div class="menu-cat-label">Cold Beverages</div>
+            <h3 class="menu-card-title">Midnight Frappé</h3>
+            <p class="menu-card-desc">A rich, frozen coffee experience as deep and mysterious as the night itself.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="cold">
+            <div class="menu-card-icon" aria-hidden="true">🫐</div>
+            <div class="menu-cat-label">Cold Beverages</div>
+            <h3 class="menu-card-title">Berry Night Cooler</h3>
+            <p class="menu-card-desc">Mixed berries blended into a refreshing signature drink with vibrant, natural flavor.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="cold">
+            <div class="menu-card-icon" aria-hidden="true">🍋</div>
+            <div class="menu-cat-label">Cold Beverages</div>
+            <h3 class="menu-card-title">Lemon Mint Breeze</h3>
+            <p class="menu-card-desc">A refreshing balance of citrus and mint — clean, cool, and invigorating.</p>
+          </article>
+
+          <!-- DESSERTS -->
+          <article class="menu-card glass-card" data-category="dessert">
+            <div class="menu-card-icon" aria-hidden="true">🍰</div>
+            <div class="menu-cat-label">Desserts</div>
+            <h3 class="menu-card-title">Chocolate Eclipse Cake</h3>
+            <p class="menu-card-desc">Rich chocolate layers crafted with premium cocoa — a dessert that eclipses all others.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="dessert">
+            <div class="menu-card-icon" aria-hidden="true">🧁</div>
+            <div class="menu-cat-label menu-cat-gold">Customer Favorite</div>
+            <h3 class="menu-card-title">Golden Cheesecake</h3>
+            <p class="menu-card-desc">Creamy cheesecake crowned with golden caramel drizzle — a decadent indulgence.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="dessert">
+            <div class="menu-card-icon" aria-hidden="true">🍫</div>
+            <div class="menu-cat-label">Desserts</div>
+            <h3 class="menu-card-title">Moonlight Brownie</h3>
+            <p class="menu-card-desc">Warm chocolate brownie served with a signature LAYAAL touch — fudgy, rich, unforgettable.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="dessert">
+            <div class="menu-card-icon" aria-hidden="true">🧇</div>
+            <div class="menu-cat-label menu-cat-brown">Chef's Pick</div>
+            <h3 class="menu-card-title">Lotus Delight Waffle</h3>
+            <p class="menu-card-desc">Fresh waffle topped with Lotus cream and biscuit crumble — the ultimate sweet experience.</p>
+          </article>
+
+          <!-- LIGHT BITES -->
+          <article class="menu-card glass-card" data-category="bites">
+            <div class="menu-card-icon" aria-hidden="true">🥪</div>
+            <div class="menu-cat-label">Light Bites</div>
+            <h3 class="menu-card-title">Signature Chicken Club</h3>
+            <p class="menu-card-desc">Premium layered club sandwich with crispy chicken and fresh toppings — a LAYAAL classic.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="bites">
+            <div class="menu-card-icon" aria-hidden="true">🐟</div>
+            <div class="menu-cat-label">Light Bites</div>
+            <h3 class="menu-card-title">Gourmet Tuna Sandwich</h3>
+            <p class="menu-card-desc">Carefully seasoned tuna in a premium bun with fresh greens — simple, elegant, satisfying.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="bites">
+            <div class="menu-card-icon" aria-hidden="true">🌯</div>
+            <div class="menu-cat-label">Light Bites</div>
+            <h3 class="menu-card-title">Mediterranean Wrap</h3>
+            <p class="menu-card-desc">A fresh, vibrant wrap inspired by Mediterranean flavors — light, wholesome, and delicious.</p>
+          </article>
+          <article class="menu-card glass-card" data-category="bites">
+            <div class="menu-card-icon" aria-hidden="true">🍟</div>
+            <div class="menu-cat-label">Light Bites</div>
+            <h3 class="menu-card-title">Crispy French Fries</h3>
+            <p class="menu-card-desc">Golden, crispy fries seasoned to perfection — the perfect companion to any LAYAAL beverage.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ WHY CHOOSE LAYAAL ══════════════════ -->
+    <section id="why" class="section why-section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Our Promise</p>
+          <h2 id="why-heading" class="section-title">Why Choose <span class="text-gold">LAYAAL</span></h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="why-grid">
+          <article class="why-card glass-card reveal-up" style="animation-delay:.05s">
+            <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Premium Ingredients</h3>
+            <p>We source only the finest ingredients — from hand-selected coffee beans to locally-inspired flavors — ensuring every sip is exceptional.</p>
+          </article>
+          <article class="why-card glass-card reveal-up" style="animation-delay:.1s">
+            <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-hat-chef"></i></div>
+            <h3>Expert Preparation</h3>
+            <p>Our skilled baristas and culinary team bring years of expertise and passion to every creation, crafting beverages and bites with precision.</p>
+          </article>
+          <article class="why-card glass-card reveal-up" style="animation-delay:.15s">
+            <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-spa"></i></div>
+            <h3>Elegant Atmosphere</h3>
+            <p>From ambient lighting to curated interiors, every element of LAYAAL's space is designed to envelop you in warmth and luxury.</p>
+          </article>
+          <article class="why-card glass-card reveal-up" style="animation-delay:.2s">
+            <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+            <h3>Fresh Daily</h3>
+            <p>Every item on our menu is prepared fresh daily with no compromises — because you deserve nothing less than the finest.</p>
+          </article>
+          <article class="why-card glass-card reveal-up" style="animation-delay:.25s">
+            <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-heart"></i></div>
+            <h3>Exceptional Hospitality</h3>
+            <p>At LAYAAL, hospitality is not a service — it's a calling. Our team is dedicated to making every guest feel truly valued.</p>
+          </article>
+          <article class="why-card glass-card reveal-up" style="animation-delay:.3s">
+            <div class="why-icon" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+            <h3>Memorable Experiences</h3>
+            <p>We don't just serve beverages — we craft moments. Every visit to LAYAAL is designed to leave a lasting, beautiful impression.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ STATISTICS SECTION ══════════════════ -->
+    <section id="stats" class="section stats-section" aria-labelledby="stats-heading">
+      <div class="stats-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">By the Numbers</p>
+          <h2 id="stats-heading" class="section-title">LAYAAL in <span class="text-gold">Figures</span></h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card glass-card reveal-up" style="animation-delay:.05s">
+            <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-num" data-target="150" data-suffix="+">0</div>
+            <div class="stat-label">Daily Customers</div>
+          </div>
+          <div class="stat-card glass-card reveal-up" style="animation-delay:.1s">
+            <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></div>
+            <div class="stat-num" data-target="4500" data-suffix="+">0</div>
+            <div class="stat-label">Monthly Orders</div>
+          </div>
+          <div class="stat-card glass-card reveal-up" style="animation-delay:.15s">
+            <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-face-smile"></i></div>
+            <div class="stat-num" data-target="98" data-suffix="%">0</div>
+            <div class="stat-label">Customer Satisfaction</div>
+          </div>
+          <div class="stat-card glass-card reveal-up" style="animation-delay:.2s">
+            <div class="stat-icon" aria-hidden="true"><i class="fa-solid fa-rotate"></i></div>
+            <div class="stat-num" data-target="72" data-suffix="%">0</div>
+            <div class="stat-label">Returning Customers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ GALLERY SECTION ══════════════════ -->
+    <section id="gallery" class="section gallery-section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Visual Journey</p>
+          <h2 id="gallery-heading" class="section-title">The <span class="text-gold">Gallery</span></h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+          <p class="section-desc">A glimpse into the world of LAYAAL — where every frame tells a story of elegance and warmth.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-large reveal-up" aria-label="Signature Drinks">
+            <div class="gallery-inner">
+              <div class="gallery-placeholder gi-coffee"><span class="gi-icon">☕</span><span class="gi-label">Signature Drinks</span></div>
+            </div>
+          </figure>
+          <figure class="gallery-item reveal-up" style="animation-delay:.05s" aria-label="Coffee Art">
+            <div class="gallery-inner">
+              <div class="gallery-placeholder gi-art"><span class="gi-icon">🎨</span><span class="gi-label">Coffee Art</span></div>
+            </div>
+          </figure>
+          <figure class="gallery-item reveal-up" style="animation-delay:.1s" aria-label="Desserts">
+            <div class="gallery-inner">
+              <div class="gallery-placeholder gi-dessert"><span class="gi-icon">🍰</span><span class="gi-label">Desserts</span></div>
+            </div>
+          </figure>
+          <figure class="gallery-item gallery-tall reveal-up" style="animation-delay:.15s" aria-label="Interior Design">
+            <div class="gallery-inner">
+              <div class="gallery-placeholder gi-interior"><span class="gi-icon">🏛️</span><span class="gi-label">Interior Design</span></div>
+            </div>
+          </figure>
+          <figure class="gallery-item reveal-up" style="animation-delay:.2s" aria-label="Guest Experience">
+            <div class="gallery-inner">
+              <div class="gallery-placeholder gi-guest"><span class="gi-icon">🌟</span><span class="gi-label">Guest Experience</span></div>
+            </div>
+          </figure>
+          <figure class="gallery-item reveal-up" style="animation-delay:.25s" aria-label="Night Ambience">
+            <div class="gallery-inner">
+              <div class="gallery-placeholder gi-night"><span class="gi-icon">🌙</span><span class="gi-label">Night Ambience</span></div>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ TESTIMONIALS ══════════════════ -->
+    <section id="testimonials" class="section testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Guest Stories</p>
+          <h2 id="testimonials-heading" class="section-title">What Our <span class="text-gold">Guests</span> Say</h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card glass-card reveal-up" style="animation-delay:.05s">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"LAYAAL offers one of the most relaxing café experiences I've ever had. Every detail feels intentional and premium. I leave feeling renewed every single time."</blockquote>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">S</div>
+              <div>
+                <cite class="testimonial-name">Sarah M.</cite>
+                <div class="testimonial-title">Interior Designer, Cairo</div>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card glass-card reveal-up" style="animation-delay:.1s">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"The Golden Latte is exceptional, and the atmosphere keeps me coming back. LAYAAL has become my go-to sanctuary for meaningful evenings."</blockquote>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">A</div>
+              <div>
+                <cite class="testimonial-name">Ahmed K.</cite>
+                <div class="testimonial-title">Entrepreneur, Giza</div>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card glass-card reveal-up" style="animation-delay:.15s">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"A perfect place for meaningful conversations and unforgettable evenings. The staff's warmth matches the ambience beautifully."</blockquote>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">M</div>
+              <div>
+                <cite class="testimonial-name">Mariam A.</cite>
+                <div class="testimonial-title">Architect, New Cairo</div>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card glass-card reveal-up" style="animation-delay:.2s">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"The Arabian Night Blend is unlike anything I've tasted. LAYAAL truly crafts experiences, not just beverages. Absolutely exceptional."</blockquote>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">O</div>
+              <div>
+                <cite class="testimonial-name">Omar F.</cite>
+                <div class="testimonial-title">Creative Director, Cairo</div>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card glass-card reveal-up" style="animation-delay:.25s">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"I brought my clients here for a meeting and they were blown away. LAYAAL is the definition of premium hospitality in Cairo."</blockquote>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">L</div>
+              <div>
+                <cite class="testimonial-name">Layla H.</cite>
+                <div class="testimonial-title">Business Consultant</div>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card glass-card reveal-up" style="animation-delay:.3s">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"The Lotus Delight Waffle and Midnight Frappé together is perfection. LAYAAL knows how to create an indulgent evening."</blockquote>
+            <footer class="testimonial-footer">
+              <div class="testimonial-avatar" aria-hidden="true">N</div>
+              <div>
+                <cite class="testimonial-name">Nada R.</cite>
+                <div class="testimonial-title">Food Blogger, Cairo</div>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ SOCIAL MEDIA ══════════════════ -->
+    <section id="social" class="section social-section" aria-labelledby="social-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Stay Connected</p>
+          <h2 id="social-heading" class="section-title">Follow <span class="text-gold">LAYAAL</span></h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+          <p class="section-desc">Join our community and be the first to discover new creations, events, and stories.</p>
+        </div>
+        <div class="social-grid">
+          <a href="#" class="social-card glass-card reveal-up" aria-label="Follow LAYAAL on Instagram" style="animation-delay:.05s">
+            <div class="social-icon social-ig" aria-hidden="true"><i class="fa-brands fa-instagram"></i></div>
+            <h3>Instagram</h3>
+            <p>Visual stories, coffee art, and moments of elegance.</p>
+            <span class="social-handle">@layaalcafe</span>
+          </a>
+          <a href="#" class="social-card glass-card reveal-up" aria-label="Follow LAYAAL on Facebook" style="animation-delay:.1s">
+            <div class="social-icon social-fb" aria-hidden="true"><i class="fa-brands fa-facebook-f"></i></div>
+            <h3>Facebook</h3>
+            <p>Events, offers, and community highlights.</p>
+            <span class="social-handle">LAYAAL Café</span>
+          </a>
+          <a href="#" class="social-card glass-card reveal-up" aria-label="Follow LAYAAL on TikTok" style="animation-delay:.15s">
+            <div class="social-icon social-tt" aria-hidden="true"><i class="fa-brands fa-tiktok"></i></div>
+            <h3>TikTok</h3>
+            <p>Behind-the-scenes, recipes, and café life.</p>
+            <span class="social-handle">@layaalcafe</span>
+          </a>
+          <a href="#" class="social-card glass-card reveal-up" aria-label="Subscribe to LAYAAL on YouTube" style="animation-delay:.2s">
+            <div class="social-icon social-yt" aria-hidden="true"><i class="fa-brands fa-youtube"></i></div>
+            <h3>YouTube</h3>
+            <p>Cinematic brand stories and experience films.</p>
+            <span class="social-handle">LAYAAL Official</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════ CONTACT SECTION ══════════════════ -->
+    <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-eyebrow">Get in Touch</p>
+          <h2 id="contact-heading" class="section-title">Visit <span class="text-gold">LAYAAL</span></h2>
+          <div class="section-divider" aria-hidden="true"><span></span></div>
+        </div>
+        <div class="contact-grid">
+          <!-- Info Column -->
+          <div class="contact-info reveal-left">
+            <div class="contact-info-cards">
+              <div class="contact-info-card glass-card">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Location</h4>
+                  <p>Cairo, Egypt</p>
+                </div>
+              </div>
+              <div class="contact-info-card glass-card">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+20 10 XXX XXXX</p>
+                </div>
+              </div>
+              <div class="contact-info-card glass-card">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4>Email</h4>
+                  <p>hello@layaalcafe.com</p>
+                </div>
+              </div>
+              <div class="contact-info-card glass-card">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <h4>Opening Hours</h4>
+                  <p>Daily &nbsp;|&nbsp; 4 PM – 2 AM</p>
+                </div>
+              </div>
+            </div>
+            <!-- Map Placeholder -->
+            <div class="map-placeholder glass-card" aria-label="Map location — Cairo, Egypt">
+              <div class="map-inner">
+                <i class="fa-solid fa-map-pin" aria-hidden="true"></i>
+                <span>Cairo, Egypt</span>
+                <small>Google Maps Integration</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrap reveal-right">
+            <div class="glass-card contact-form-card">
+              <h3>Send Us a Message</h3>
+              <p>We'd love to hear from you. Reserve a seat or simply say hello.</p>
+              <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+                <div class="form-group">
+                  <label for="cf-name">Full Name</label>
+                  <input type="text" id="cf-name" name="name" placeholder="Your full name" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="cf-email">Email Address</label>
+                  <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+                <div class="form-group">
+                  <label for="cf-phone">Phone Number</label>
+                  <input type="tel" id="cf-phone" name="phone" placeholder="+20 10 XXX XXXX" autocomplete="tel" />
+                </div>
+                <div class="form-group">
+                  <label for="cf-message">Message</label>
+                  <textarea id="cf-message" name="message" rows="4" placeholder="Your message or reservation request…" required></textarea>
+                </div>
+                <button type="submit" class="btn-gold btn-full" id="cf-submit">
+                  Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <div id="form-success" class="form-success" role="alert" aria-live="polite" hidden>
+                  <i class="fa-solid fa-circle-check"></i> Thank you! We'll be in touch shortly.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">LAYAAL</div>
+            <p class="footer-tagline">"Where Every Night Has a Story."</p>
+            <p class="footer-slogan">Creating memorable nights, one cup at a time.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="Instagram" class="footer-social-btn"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook" class="footer-social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="TikTok" class="footer-social-btn"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" aria-label="YouTube" class="footer-social-btn"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          <nav class="footer-nav" aria-label="Quick navigation">
+            <h4>Quick Links</h4>
+            <ul role="list">
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#menu">Our Menu</a></li>
+              <li><a href="#why">Why LAYAAL</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="footer-contact-info">
+            <h4>Contact</h4>
+            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Cairo, Egypt</p>
+            <p><i class="fa-solid fa-phone" aria-hidden="true"></i> +20 10 XXX XXXX</p>
+            <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> hello@layaalcafe.com</p>
+            <p><i class="fa-solid fa-clock" aria-hidden="true"></i> Daily | 4 PM – 2 AM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 LAYAAL Café &amp; Lounge. All rights reserved.</p>
+        <p class="footer-made">Crafted with <i class="fa-solid fa-heart" aria-hidden="true" style="color:var(--gold)"></i> for unforgettable nights.</p>
+      </div>
+    </div>
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+      <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+    </button>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
